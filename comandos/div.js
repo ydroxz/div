@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 exports.run = async (client, message, args, member) => {
   message.delete();
-  if (message.author.id !== "817160910871330836")
+  if (message.author.id !== "767169424503078923")
     return message.reply("Você Não Tem Permissão Para Isso!");
 
   const mensagem = args.slice(0).join(" ");
@@ -16,7 +16,7 @@ exports.run = async (client, message, args, member) => {
   let invisible = client.users.filter(m => m.presence.status === "offline");
 
   const embed = new Discord.RichEmbed()
-    .setTitle(`**ydroxz Divs!**`)
+    .setTitle(`**Straw Divs!**`)
     .setDescription(
       `**Mensagem enviada para:**\n\n **Servidores:** ${client.guilds.size}\n **Total:** ${client.users.size}\n\n **Onlines:** ${on.size}\n **Ausentes:** ${ausente.size}\n **Ocupados:** ${npertube.size}\n **Offline:** ${invisible.size}`
     )
